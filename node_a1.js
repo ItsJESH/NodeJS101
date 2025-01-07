@@ -95,13 +95,11 @@ const { lchown } = require('fs/promises');
 
 // 6. Read the update.txt file and display the data. Additionally print a line "We are excited" using console.log() after the read operation
 
-// let a = fs.readFileSync('space_project/update.txt','utf-8')
-
 // fs.readFile('space_project/update.txt',(err,a)=>{
 //     if(err){
 //         throw err;
 //     }
-//     console.log(data.toString())
+//     console.log(a.toString())
 // })
 //     console.log('We are excited')
 
@@ -118,6 +116,6 @@ const { lchown } = require('fs/promises');
 
 // 8. Delete the folder space_project
 
-// fs.rmdir('space_project',(err)=>{
-//  if(err){throw err}   
-// })
+fs.rmdir('space_project',(err)=>{
+ if(err){throw err}   
+})
